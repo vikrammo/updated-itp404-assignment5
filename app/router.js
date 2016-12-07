@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('artists', function() {
+    this.route('artist', {path: '/:term'});
+  });
+  this.route('search');
 });
 
 export default Router;

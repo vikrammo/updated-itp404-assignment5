@@ -1,0 +1,23 @@
+
+  <div class="Object">
+    <!-- <p> Artist: {{data.name}}</p> -->
+
+    <ul>
+      {{#each model as |song|}}
+      <li>
+      <!-- <p> Artist: {{#link-to "artists.artist" data.id}} {{data.name}} {{/link-to}}</p> -->
+
+      <p> This artist has: {{song.playCount}} songs </p>
+      <p> Price: {{song.price}} </p>
+      <p> This song: {{song.playCount}} plays </p>
+
+    </li>
+    {{/each}}
+
+    </ul>
+
+
+  </div>
+
+
+{{outlet}}
